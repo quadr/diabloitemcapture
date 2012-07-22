@@ -89,10 +89,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\Desktop\Dropbox\Diablo\diablo.cs">
+    <Compile Include="diablo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\..\..\..\..\Desktop\Dropbox\Diablo\diablo.Designer.cs">
+    <Compile Include="diablo.Designer.cs">
       <DependentUpon>diablo.cs</DependentUpon>
     </Compile>
     <Compile Include="imageshack.cs" />
@@ -113,7 +113,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="..\..\..\..\..\Desktop\Dropbox\Diablo\diablo.resx">
+    <EmbeddedResource Include="diablo.resx">
       <DependentUpon>diablo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wizard.resx">
@@ -132,6 +132,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="diablo.font" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
