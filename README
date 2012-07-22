@@ -1,0 +1,33 @@
+v0.21
+- Removed old method for getting item_max_values.csv
+
+v0.2
+- Added support for 1440x900, 1366x768 and 1280x1024 resolutions
+- Improved autocrop speed
+- Added uploading to Imageshack.us
+- Added choice of capture key : F1 to F8 added to the original F12 key. You can select your preferred key in a dropbox.
+- Bug fixes
+
+
+v0.15
+- Added "Add all" button in multi item wizard
+
+v0.14
+- Added feature for automatically group item pictures in one big picture called "Multi items in picture wizard". Are you a wizard ?
+- Fixed some bugs
+
+v0.13
+- Added "Reset F12 interception" button to restart F12 keypress detection if it has stopped
+- Greatly improved autocrop in supported resolutions. 
+As a consequence, you cannot autocrop equipped items. You'll have to put them in your inventory or bank before capturing them. 
+- You can now manual crop using selection box in any direction
+- Fixed manual crop selection bug
+- Fixed Equipped Item panel showing in autocrop
+
+v0.12 : 
+- Added support for 1920x1080 and 1680x1050 resolutions.
+- New cursors for image box.
+
+v0.11 : 
+Updated help panel
+Removing pictures from list with Delete key.
