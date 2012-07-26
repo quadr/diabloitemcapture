@@ -34,8 +34,8 @@ namespace Diablo
         public Helpbox()
         {
             InitializeComponent();
-            richTextBox1.AppendText("Use F12 while in game to capture items (hovering the item with the mouse cursor)\n\nUse delete key to delete from image list\n\nSet your video options to WINDOWED FULLSCREEN or WINDOWED !\n\nAutomatic image crop only works in 1920x1200, 1920x1080, 1680x1050, 1440x900, 1366x768 and 1280x1024 resolutions\nFor other resolutions use the left-click and drag on picture to crop, right-click to move picture.\n\n");
-            richTextBox1.AppendText("Autocropped items are automatically saved. If you're cropping manually, you need to save the item with the save picture button\n");
+            richTextBox1.AppendText("Use F12 while in game to capture items (hovering the item with the mouse cursor)\n\nUse delete key to delete from image list\n\nSet your video options to WINDOWED FULLSCREEN or WINDOWED !\n\n");
+            richTextBox1.AppendText("Autocropped items are automatically saved. If you're cropping manually you need to save the item with the save picture button\nReset image button resets image to the full screenshot in case autocrop didn't work\n");
             
         }
 

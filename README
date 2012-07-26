@@ -1,3 +1,7 @@
+v0.22
+- Added the possibility of expanding the capture window by expanding the application.
+- Improved autocrop a little
+
 v0.21
 - Removed old method for getting item_max_values.csv
 

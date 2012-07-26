@@ -279,8 +279,8 @@ namespace Diablo
 
             int FinalPicWidth = 0;
             
-            Int32 TotalHeight = 0;
-            Int32 TallestHeight = 0;
+            Int32 TotalHeight = 1;
+            Int32 TallestHeight = 1;
             Bitmap[] images = new Bitmap[pic_count];
             
             
@@ -296,23 +296,25 @@ namespace Diablo
             //richTextBox1.AppendText(rowcount.ToString() + "," +rowcounttmp.ToString() + "," +rowcounttmp2.ToString()+ "\n");
 
             Bitmap[] imagearr = new Bitmap[rowcount];
-
+            
             
             int j = 0; int k = 0;
             int fromtop = 0;
+            int imgh= 0;
 
-            for (int r = 0; r< rowcount; r++){
+            for (int r = 0; r < rowcount; r++){
 
                 int fromleft = 0;
                 Int32 TotalWidth = 0;
+                TallestHeight = 0;
                 for (int z = k; z < k + boxvalueint; z++)
                 {
                     
                     if (z < pic_count)
                     {
-
+                        
                         images[z] = new Bitmap(DataContainer.imgdir + "\\" + listBox2.Items[z].ToString());
-
+                        imgh = images[z].Height;
                         TotalWidth = TotalWidth + images[z].Width;
                         if (TallestHeight < images[z].Height) { TallestHeight = images[z].Height; }
                     }
@@ -340,6 +342,7 @@ namespace Diablo
                 imagearr[j] = combinedbitmap;
                 
                 
+                
 
                 j = j + 1;
 
@@ -350,8 +353,8 @@ namespace Diablo
             //imagearr[0].Save(DataContainer.imgdir + "\\test.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
             //imagearr[1].Save(DataContainer.imgdir + "\\test2.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
             //imagearr[2].Save(DataContainer.imgdir + "\\test3.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-            
 
+            
             
             int arrwidth = 0; int arrheight = 0;
 
@@ -385,8 +388,13 @@ namespace Diablo
             combinedbitmapfinal.Save(DataContainer.imgpathlol, System.Drawing.Imaging.ImageFormat.Jpeg);
 
 
-            
+            //images[].Dispose();
+            //combinedbitmap.Dispose();
             combinedbitmapfinal.Dispose();
+
+            
+            images[0].Dispose();
+            imagearr[0].Dispose();
 
         
          }

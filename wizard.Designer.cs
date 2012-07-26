@@ -230,7 +230,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(268, 134);
             this.richTextBox1.TabIndex = 17;
             this.richTextBox1.Text = "";
-            this.richTextBox1.Visible = false;
             // 
             // button7
             // 

@@ -118,7 +118,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Help DiabloItemCapture v0.2";
+            this.Text = "Help DiabloItemCapture v0.3";
             this.ResumeLayout(false);
             this.PerformLayout();
 
