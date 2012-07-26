@@ -1,3 +1,8 @@
+v0.3
+- Entirely changed the autocrop method. Now works in all resolutions (maybe some exotic resolutions won't work).
+- Fixed bug in the big image wizard.
+- Fixed the interception key bug.
+
 v0.22
 - Added the possibility of expanding the capture window by expanding the application.
 - Improved autocrop a little
