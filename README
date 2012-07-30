@@ -1,3 +1,12 @@
+v0.33
+- fixed bug in autocrop for some resolutions
+- fixed bug for reset image
+
+
+v0.32
+- fixed autocrop bug
+- fixed "Save picture.." in the wizard
+
 v0.3
 - Entirely changed the autocrop method. Now works in all resolutions (maybe some exotic resolutions won't work).
 - Fixed bug in the big image wizard.

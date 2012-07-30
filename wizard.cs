@@ -33,7 +33,7 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using Utilities;
 using System.Xml;
-using WindowsFormsApplication1;
+using DiabloApp;
 using Imageshack;
 
 namespace Diablo
@@ -390,7 +390,7 @@ namespace Diablo
 
             //images[].Dispose();
             //combinedbitmap.Dispose();
-            combinedbitmapfinal.Dispose();
+            //combinedbitmapfinal.Dispose();
 
             
             images[0].Dispose();

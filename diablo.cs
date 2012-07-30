@@ -45,7 +45,7 @@ using Diablo.Properties;
 
 
 
-namespace WindowsFormsApplication1
+namespace DiabloApp
 {
     
 
@@ -396,7 +396,8 @@ namespace WindowsFormsApplication1
 
            picturenumber = picturenumber + 1;
 
-           pictureBox2.Refresh();  
+           pictureBox2.Refresh();
+           //BMP.Dispose();
            
         }
 
@@ -469,7 +470,7 @@ namespace WindowsFormsApplication1
                         }
 
                         // bottom pixel in coin on the item panel
-                        if ((19 < imagePointer1[0] && imagePointer1[0] < 23) && (144 < imagePointer1[1] && imagePointer1[1] < 151) && (218 < imagePointer1[2] && imagePointer1[2] < 228))
+                        if ((19 < imagePointer1[0] && imagePointer1[0] < 24) && (144 < imagePointer1[1] && imagePointer1[1] < 159) && (218 < imagePointer1[2] && imagePointer1[2] < 236))
                         {
                             
                             /*
@@ -481,7 +482,7 @@ namespace WindowsFormsApplication1
                             */
 
 
-                            if (bottomposfound == false) { bottompos = i; bottomposfound = true; }
+                            if ((bottomposfound == false) && (i > toppos + 200)) { bottompos = i; bottomposfound = true; }
                             
                         }
                         
@@ -686,7 +687,7 @@ namespace WindowsFormsApplication1
         private Bitmap cropImage(Bitmap imga, Rectangle cropArea)
         {
 
-            Bitmap bmpCrop = imga; //DataContainer.img1;
+            Bitmap bmpCrop = DataContainer.img1;
             //if ((cropArea.Width > 0) && (cropArea.Height > 0) ) { 
             bmpCrop = imga.Clone(cropArea, imga.PixelFormat); //}
             //
